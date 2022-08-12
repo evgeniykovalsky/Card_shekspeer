@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import About from './components/About';
+import Tvir from './components/Tvir';
 import reportWebVitals from './reportWebVitals';
+import { cards } from './data';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <About data={cards}/>
+    <Tvir data={cards}/>
   </React.StrictMode>
 );
 
